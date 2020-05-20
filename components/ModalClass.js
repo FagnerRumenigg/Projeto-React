@@ -38,8 +38,9 @@ export default class ModalClass extends React.Component {
             visible = {this.state.modalVisible}
             onRequestClose= {() => console.log('Modal closed')}
           >          
-          <View style={styles.modal}>
-          
+        <View style={styles.backgroundSecondTask}>
+            <View style={styles.modal}>
+        
           <Image
                 source={{uri:this.props.avatar}}
                 style={styles.imagem}
@@ -55,6 +56,7 @@ export default class ModalClass extends React.Component {
                     <Text style={styles.button}>Exit</Text>
             </TouchableHighlight>
           </View>           
+        </View>
         </Modal>
 
 
@@ -71,6 +73,13 @@ export default class ModalClass extends React.Component {
 }
 
 const styles = StyleSheet.create({
+
+  backgroundSecondTask:{
+    backgroundColor:'black',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    },
     imagem:{
         width: 50,
         height: 50,

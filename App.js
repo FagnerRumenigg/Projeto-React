@@ -10,13 +10,11 @@
 
     render() {
       return (
-        <ScrollView>
           <View style={{backgroundColor: "black" }}> 
             <FirstTask/>
             <Text style={styles.peopleStyle}> People List:</Text>
             <SecondTask/>
           </View>
-        </ScrollView>
       )
 
     }
